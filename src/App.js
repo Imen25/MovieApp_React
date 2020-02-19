@@ -15,6 +15,12 @@ class App extends React.Component {
       search: "",
       movies: [
         {
+          title: "You",
+          src:
+            "https://i.pinimg.com/736x/c2/7f/a4/c27fa447b91d34933293f37a0b2f1a89.jpg",
+          rank: "5"
+        },
+        {
           title: "Sonic The Hedgehog",
           src:
             "https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1573569638/amc-cdn/production/2/movies/56300/56344/PosterDynamic/96202.jpg",
@@ -37,6 +43,18 @@ class App extends React.Component {
           src:
             "https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1578590562/amc-cdn/production/2/movies/59400/59413/PosterDynamic/98365.jpg",
           rank: "5"
+        },
+        {
+          title: "A Turtle's Tale 2: Sammy's Escape From Paradise",
+          src:
+            "https://images-na.ssl-images-amazon.com/images/I/91iuUHOeQQL._AC_SL1500_.jpg",
+          rank: "3"
+        },
+        {
+          title: "Blue My Mind",
+          src:
+            "https://m.media-amazon.com/images/M/MV5BNmIzZTA4MDYtNTBjYS00MmJhLWE0ZTktNjM1Mjg2NzlhZDg3XkEyXkFqcGdeQXVyMDU5MDEyMA@@._V1_SY1000_SX750_AL_.jpg",
+          rank: "3"
         }
       ]
     };

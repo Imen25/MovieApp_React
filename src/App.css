@@ -26,6 +26,10 @@
   left: 41%;
   cursor: pointer;
 }
+.movie img {
+  width: 307px;
+  height: 461px;
+}
 .movie img:hover {
   transform: scale(0.9);
 }
