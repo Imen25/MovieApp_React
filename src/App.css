@@ -1,38 +1,97 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #26262d;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/*****movies********/
+.movies {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.movie {
+  position: relative;
+  margin-bottom: 20px;
+}
+.movie span {
+  position: absolute;
+  top: 0px;
+  right: 12px;
+}
+.fa-play-circle {
+  visibility: hidden;
+  font-size: 65px;
+  position: absolute;
+  top: 37%;
+  left: 41%;
+  cursor: pointer;
+}
+.movie img:hover {
+  transform: scale(0.9);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie img:hover ~ .fa-play-circle {
+  visibility: visible;
+}
+/********search******/
+input {
+  width: 100%;
+  border: none;
+  height: 37px;
+  border-radius: 40px;
+  box-sizing: content-box;
+  color: #fff;
+  text-align: center;
+  background: hsla(0, 0%, 100%, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-top: 2px;
+}
+input::placeholder {
+  color: #fff;
+}
+
+.carouselSearch img {
+  width: 100%;
+  height: 600px;
+}
+
+.Search {
+  position: absolute;
+  top: 15px;
+  left: 30%;
+  width: 40%;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+p {
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+.fa-search {
+  position: absolute;
+  top: 12px;
+  left: 5%;
+  font-size: 17px;
+}
+.fa-plus {
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 27px;
+  right: 15%;
+}
+
+/******form*****/
+.modalForm {
+  background-color: #26262d;
+  color: white;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.posModal {
+  margin-top: 90px;
 }
