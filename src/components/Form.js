@@ -16,6 +16,11 @@ export default class Form extends Component {
     });
   };
 
+  addMovie = () => {
+    this.props.onSubmit();
+    this.handleShow();
+  };
+
   render() {
     return (
       <div>
@@ -59,10 +64,7 @@ export default class Form extends Component {
             <Button variant="secondary" onClick={this.handleShow}>
               Close
             </Button>
-            <Button
-              variant="primary"
-              onClick={(this.handleShow, this.props.onSubmit)}
-            >
+            <Button variant="primary" onClick={this.addMovie}>
               Add Movie
             </Button>
           </Modal.Footer>
